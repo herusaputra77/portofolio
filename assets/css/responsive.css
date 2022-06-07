@@ -1,0 +1,125 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+ .about-me p {
+  font-size: 15px;
+}
+.about-btn {
+  margin-top: 25px;
+}
+.my-progress-bar h4 {
+  margin-bottom: -20px;
+}
+.my-progress-bar .progress {
+  margin-bottom: 28px;
+}   
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+ .slide-area h1 {
+  font-size: 43px;
+  margin-top: 0;
+}
+.slide-area p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+.about-me {
+  text-align: center;
+}
+.about-me h2 {
+  margin-top: 25px;
+}
+.single-service {
+  margin-bottom: 20px;
+}
+#skill.section-padding {
+  padding: 50px 0;
+}
+.owl-nav div{
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  left: 0;
+}
+.owl-nav div.owl-next{
+  right: 0;
+}
+.testmonial-active:hover .owl-nav div{
+  opacity: 1;
+  visibility: visible;
+}
+
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+.mainmanu {
+  display: none;
+}
+.slide-area h1 {
+  font-size: 29px;
+  margin-top: 20px;
+}
+.slide-area p {
+  font-style: italic;
+  margin: 20px 0;
+}
+.boxed-btn {
+  margin-bottom: 20px;
+}
+.borderd-btn {
+  margin-bottom: 20px;
+}
+.single-slide .col-sm-5 {
+  display: none;
+}
+.about-me {
+  text-align: center;
+}
+.about-me h2 {
+  margin-top: 25px;
+}
+.service-icon {
+    display: inline-block;
+    left: auto;
+    margin-top: 0;
+    position: inherit;
+}
+.single-service {
+    padding-left: 20px;
+    text-align: center;
+    margin: 15px 0;
+}
+.single-service h4 {
+    line-height: 25px;
+    margin-top: 15px;
+}
+input[type="submit"], button[type="submit"] {
+  padding: 10px 100px;
+}
+.footer-area, .social-media.text-right {
+  text-align: center;
+}
+.social-media {
+  margin-top: 30px;
+}
+.owl-nav div{
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  left: 0;
+}
+.owl-nav div.owl-next{
+  right: 0;
+}
+.testmonial-active:hover .owl-nav div{
+  opacity: 1;
+  visibility: visible;
+}
+
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+	
+
+}

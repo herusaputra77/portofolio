@@ -1,0 +1,1055 @@
+/*
+Theme Name: Myfolio - One Page Personal Portfolio HTML5 Template
+Theme URI: http://live.envalab.com/html/myfolio/
+Author: ENVALAB TEAM
+Author URI: http://envalab.com/
+Description: Myfolio – Portfolio Personal Page HTML5 Template is for Creative, Freelancers, Photographers, startups and individual portfolio showcase.
+Version: 1.0
+*/
+/* ============================================================
+  Index CSS
+
+  * Base CSS
+  * Preloder CSS
+  * Main Manu CSS
+  * Offcanvas manu CSs
+  * Slide CSS
+  * About Me CSS
+  * Portfolio CSS
+  * Service CSS
+  * MY skill CSS
+  * Blog CSS
+  * Testmonial CSS 
+  * Contact CSS
+  * Footer CSS
+  * Footer to top CSS
+=============================================================== */
+/*=====================================
+  Base CSS
+=======================================*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus, input:focus, textarea:focus, button:focus { outline: none }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    color: #333333;
+}
+h1,
+h2{
+    text-transform: uppercase;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+a:hover, a:focus { text-decoration: none }
+.pdt-150{
+    padding-top: 150px;
+}
+.pdt-100{
+    padding-top: 100px;
+}
+.section-padding {
+    padding: 100px 0;
+}
+.pdt-50 {
+    padding-top: 50px;
+}
+.padding-bottom-0{
+  padding-bottom: 0px;
+}
+.padding-top-0{
+    padding-top: 0px; 
+}
+.boxed-btn, .borderd-btn {
+    background-color: #ffcf1c;
+    border-radius: 36px;
+    color: #fff;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 60px;
+    transition: 0.3s;
+    border: 1px solid #ffcf1c;
+}
+.boxed-btn:hover{
+	background: transparent;
+    color: #fff;
+}
+.borderd-btn {
+    background: transparent;
+}
+.borderd-btn:hover{
+	background: #ffcf1c;
+	color: #fff;
+}
+input[type="text"], input[type="email"], input[type="submit"], input[type="tel"], input[type="phone"], textarea, button[type="submit"] {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ededed;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    width: 100%;
+}
+input[type="submit"], button[type="submit"] {
+    background: #ffce1d none repeat scroll 0 0;
+    color: #fff;
+    padding: 10px 150px;
+    width: auto;
+    transition: 0.3s;
+}
+input[type="submit"]:hover, button[type="submit"]:hover {
+    background: #000 none repeat scroll 0 0;
+}
+/*=====================================
+  Preloder CSS
+=======================================*/
+.site-preloder {
+  background: #fff;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+.sk-cube-grid {
+  height: 40px;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+  position: absolute;
+  top: 50%;
+  width: 40px;
+}
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #ffcc33;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  } 
+}
+/*=====================================
+  Main Manu CSS
+=======================================*/
+.header-area.header-fixed {
+  background: rgba(0,0,0,0.7);
+}
+.mainmanu ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.mainmanu ul li {
+    display: inline-block;
+}
+.mainmanu ul li a {
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 20px 0 20px 20px;
+  transition: 0.3s;
+}
+.mainmanu ul li:hover a, .mainmanu ul li.current a, .off-canvas-menu ul li:hover a, .off-canvas-menu ul li.current a{
+	color: #ffce1d;
+}
+.header-area {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+/*=====================================
+  Offcanvas manu CSS
+=======================================*/
+.menu-trigger {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  padding: 19px 0;
+  transition: all 0.3s ease 0s;
+}
+.menu-trigger:hover{
+	color: #ffce1d;
+}
+.off-canvas-menu {
+  background: #fff none repeat scroll 0 0;
+  height: 100%;
+  left: -200px;
+  opacity: 0;
+  position: fixed;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 200px;
+  z-index: 99;
+  padding-top: 25px;
+}
+.menu-close {
+  color: #ffcc33;
+  cursor: pointer;
+  margin-top: 12px;
+  padding: 50px 40px 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.off-canvas-menu ul {
+    list-style: outside none none;
+    padding: 32px;
+}
+.off-canvas-menu ul li {
+    display: block;
+}
+.off-canvas-menu ul li a {
+    display: block;
+    padding: 8px;
+    color: #000;
+    transition: 0.3s;
+}
+.off-canvas-menu.show-off-canvas-menu {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+.off-canvas-menu-shade {
+  background: #000 none repeat scroll 0 0;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 100%;
+  z-index: 99;
+}
+.off-canvas-menu-shade.active {
+  opacity: 0.7;
+  visibility: visible;
+}
+/*=====================================
+  Slide  CSS
+=======================================*/
+.slide-area{background-image: url(assets/img/hero-bg-1.jpg);}
+.slide-area.slide-parallax{
+    background-position: 50% 0;
+}
+.slide-video-bg {
+	background: none;
+}
+.slide-video-bg {
+    background-image: url(assets/img/slider-bg-1.jpg);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+    width:100%;
+    height:100%;
+    z-index:0;
+    backface-visibility:hidden
+}
+.slide-area {
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.slide-area-overlay {
+    background: #333;
+    opacity: 0.9;
+}
+.slide-area h3 {
+    color: #ffcc33;
+    font-size: 22px;
+    font-weight: 600;
+}
+.slide-area h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-top: 50px;
+  color: #fff;
+}
+.slide-area p {
+  font-style: italic;
+  margin: 50px 0;
+}
+.slide-area .owl-dots div {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 50%;
+    height: 10px;
+    margin: 10px;
+    width: 10px;
+}
+.slide-area .owl-dots div.active {
+    -webkit-box-shadow: 0px 0px 0px 5px #808080;
+    -moz-box-shadow: 0px 0px 0px 5px #808080;
+    box-shadow: 0px 0px 0px 5px #808080;
+}
+.slide-area .owl-dots {
+    bottom: 3%;
+    position: absolute;
+    right: 2%;
+}
+/*=====================================
+  About Me CSS
+=======================================*/
+.about-me p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+.about-me .borderd-btn {
+    color: #000;
+}
+.about-me .boxed-btn:hover {
+	color: #000;
+}
+.about-me .borderd-btn:hover{
+    color: #fff;
+}
+.about-btn {
+  margin-top: 70px;
+}
+/*=====================================
+  Portfolio CSS
+=======================================*/
+.portfolio-bg-1{background-image: url(gambar/pmb.JPG);}
+.portfolio-bg-2{background-image: url(gambar/lppm.JPG);}
+.portfolio-bg-3{background-image: url(gambar/data_kriteria.JPG);}
+.portfolio-bg-4{background-image: url(gambar/dashboard.JPG);}
+.portfolio-bg-5{background-image: url(gambar/gambar-bendera-indonesia\ copy.jpg);}
+.portfolio-bg-6{background-image: url(gambar/17\ agustus\ copy.jpg);}
+.portfolio-bg-7{background-image: url(gambar/BAKSO\ BUAH3.png);}
+.portfolio-bg-8{background-image: url(gambar/desain\ logo\ akmal.png);}
+
+.single-portfolio {
+    background-position: center center;
+    background-size: 100% 100%;
+    display: table;
+    height: 270px;
+    margin: 5px 0;
+    width: 100%;
+    transition: 0.3s;
+}
+.single-portfolio:hover{
+  background-size: 120% 120%;
+}
+.portfolio-hover {
+    display: table-cell;
+    opacity: 0;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    vertical-align: middle;
+    visibility: hidden;
+    z-index: 1;
+}
+.row.portfolio {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.row.portfolio .col-md-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.row.portfolio .col-md-3:nth-child(2) .single-portfolio,
+.row.portfolio .col-md-3:nth-child(4) .single-portfolio,
+.row.portfolio .col-md-3:nth-child(6) .single-portfolio,
+.row.portfolio .col-md-3:nth-child(5) .single-portfolio{
+    height: 300px;
+}
+.portfolio-hover, .portfolio-hover a {
+    color: #fff;
+}
+.portfolio-hover a {
+  background: #1E1208;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 28px;
+  height: 70px;
+  line-height: 70px;
+  width: 70px;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+.portfolio-hover a:hover{
+  background:#ffcf1c;
+  opacity: 1;
+}
+.portfolio-hover h3 {
+  color: #fff;
+  display: block;
+  font-weight: 400;
+  margin-top: 140px;
+  transition: 0.3s;
+  font-size: 19px;
+}
+.single-portfolio:hover .portfolio-hover h3 {
+  margin-top: 30px;
+}
+.portfolio-hover::after {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.single-portfolio:hover .portfolio-hover {
+    opacity: 1;
+    visibility: visible;
+}
+.portfolio-menu ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.portfolio-menu ul li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: 0.3s;
+    font-weight: 600;
+    border-bottom: 2px solid #fff;
+}
+.portfolio-menu ul li:hover, .portfolio-menu ul li.active {
+	color: #ffcf1c;
+	border-color: #ffcf1c;
+}
+.portfolio-menu {
+    margin-bottom: 50px;
+}
+.section-title {
+    margin-bottom: 30px;
+}
+/*=====================================
+  Service CSS
+=======================================*/
+.service-area{background-image: url(assets/img/service-bg.jpg);}
+.service-area {
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.service-area::after {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.service-area h2, .service-area h4 {
+    color: #fff;
+}
+.service-icon {
+    border: 1px solid #ffcf1c;
+    border-radius: 50%;
+    color: #ffcf1c;
+    display: inline-block;
+    font-size: 25px;
+    height: 60px;
+    left: 5%;
+    line-height: 57px;
+    margin-top: -30px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 60px;
+}
+.single-service {
+  margin: 5px 0;
+  padding: 20px 20px 20px 100px;
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+  font-size: 14px;
+  line-height: 25px;
+}
+.single-service:hover{
+  box-shadow: 0 0 5px #f7f7f7;
+}
+.single-service::after {
+  background: #808080 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.service-area .row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.service-area .row .col-md-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/*=====================================
+  My Skill CSS
+=======================================*/
+.my-progress-bar h4 {
+  font-weight: 600;
+  margin-bottom: -15px;
+}
+.my-progress-bar .progress .progress-bar {
+  animation: 2s ease-out animate-positive;
+  box-shadow: none;
+  position: relative;
+  background-color: #FFCE1D;
+  border-radius: 5px;
+}
+.my-progress-bar .progress .progress-bar::after {
+  background:  #ffcf1c;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px #fff0bb;
+  color: #ffcf1c;
+  content: "";
+  height: 15px;
+  margin-top: -2.5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 15px;
+}
+.my-progress-bar .progress {
+  background-color: #ded6d6;
+  border-radius: 23px;
+  height: 10px;
+  margin-bottom: 50px;
+  overflow: inherit;
+}
+@-moz-keyframes animate-positive { 0%  { width:0px;} 100%}
+@-webkit-keyframes animate-positive  { 0%  { width:0px;} 100%}
+/*=====================================
+  Blog CSS
+=======================================*/
+.blog-bg-1{background-image: url(gambar/gitar.jpg);}
+.blog-bg-2{background-image: url(gambar/sky.jpg);}
+.blog-bg-3{background-image: url(gambar/game.jpg);}
+.blog-bg {
+    background-color: #ddd;
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 230px;
+    margin-bottom: 20px;
+    display: block;
+    transition: 0.3s;
+}
+.single-blog {
+    background: #fff none repeat scroll 0 0;
+    margin: 15px 0;
+    padding: 30px;
+    transition: 0.3s;
+}
+.single-blog:hover{
+  box-shadow: 0 0 10px #ddd;
+}
+.single-blog:hover .blog-bg{
+  background-size: 120% 150%;
+}
+.my-blog {
+    background: #f6f6f6 none repeat scroll 0 0;
+}
+.single-blog h4 {
+    font-weight: 600;
+    transform: 0.3s;
+	font-weight: 700;
+}
+.single-blog p {
+	font-size: 14px;
+}
+.single-blog:hover.single-blog h4{
+  opacity: 0.8;
+}
+/*=====================================
+  Testmonial CSS
+=======================================*/
+.testmonial-content {
+    background: #f6f6f6 none repeat scroll 0 0;
+    padding: 80px 18px 20px;
+}
+.testmonial-content p {
+	font-size: 14px;
+}
+.author-img {
+  height: 100px;
+  left: 50%;
+  margin-left: -50px;
+  position: absolute;
+  top: 15px;
+  width: 100px;
+}
+.author-img img {
+    border-radius: 50%;
+    height: 100px;
+}
+.single-testmolial {
+    padding-top: 70px;
+    position: relative;
+}
+.author-rating i.fa {
+    color: #ff9800;
+}
+.owl-nav div {
+    background: #ffce1d none repeat scroll 0 0;
+    color: #fff;
+    height: 30px;
+    left: -10%;
+    line-height: 27px;
+    margin-top: -15px;
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    width: 30px;
+    transition: 0.3s;
+}
+.owl-nav div:hover{
+	background: #000;
+}
+.owl-nav div.owl-next {
+    left: auto;
+    right: -10%;
+}
+/*=====================================
+  Contact CSS
+=======================================*/
+.contact-me {
+    background: #f6f6f6 none repeat scroll 0 0;
+    padding-bottom: 50px;
+}
+.contact-form textarea {
+    height: 150px;
+}
+.contact-form {
+    text-align: center;
+}
+/*=====================================
+  Footer CSS
+=======================================*/
+.footer-area {
+    background: #303030 none repeat scroll 0 0;
+    padding: 20px 0;
+}
+.footer-area, .footer-area a {
+    color: #fff;
+}
+.footer-area p {
+    margin: 0;
+	margin-top: 5px;
+}
+.social-media a {
+    background: #3b3b3b none repeat scroll 0 0;
+    border-radius: 50%;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    text-align: center;
+    width: 40px;
+    transition: 0.3s;
+}
+.social-media a:hover{
+	background: #ffce1d;
+}
+/*=====================================
+  Botton to top CSS
+=======================================*/
+.scroll-to-top {
+  background: #f0ad4e none repeat scroll 0 0;
+  bottom: 4%;
+  color: #fff;
+  font-size: 20px;
+  height: 30px;
+  line-height: 26px;
+  position: fixed;
+  right: 1%;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  width: 30px;
+  z-index: 2;
+}
+.scroll-to-top:hover {
+    background: #000 none repeat scroll 0 0;
+    color: #fff;
+}
+
+
+
+/* SINGLE BLOG PAGE CSS START */
+/* blog details section start */
+.single-blog.single-blog-page {
+	padding:100px 0px 80px;
+}
+.blog-details img{
+	width:100%
+}
+.blog-details h2{
+	font-size: 25px;
+	font-weight: 500;
+	margin: 45px 0px 25px;
+}
+.blog-details-info{
+    font-weight: 300;
+}
+.blog-details-info ul li {
+    display:inline-block;
+}
+.blog-details-date{
+	float: left;
+}
+.blog-details-date ul {
+	margin: 0;
+	padding: 0;
+}
+.blog-details-date ul li{
+	margin-right:25px;
+}
+.blog-details-date ul li a {
+	color: #333;
+}
+.blog-details-date ul li a i{
+	margin-right:10px;
+}
+.blog-details-link{
+	float:right;
+}
+.blog-details-link span,.blog-details-link ul{
+	float: left;
+}
+.blog-details-link ul li a{
+	margin-left:10px;
+	transition:all 0.3s;
+}
+.blog-details-link ul li a {
+	color: #333;
+}
+.blog-details-link ul li a:hover{
+	color: #ffce1d;
+}
+.blog-details-para{
+	padding: 20px 0px 35px;
+	clear: both;
+	border-bottom:1px solid #E5E4E4;
+}
+.blog-details-para p{
+    font-weight: 300;
+}
+.blog-details-para p.activv{
+	color: #ffce1d;
+	margin: 17px 0px 17px 45px;
+	font-size: 17px;
+    font-weight: 400;
+	font-style: italic;
+}
+.blog-details-tag{
+    font-weight: 300;
+	padding:20px 0px 75px;
+}
+.blog-details-tag ul li {
+    display:inline-block;
+}
+.blog-details-tag ul li a{
+	color:#222222;
+}
+.blog-details-tags{
+	float: left;
+}
+.blog-details-tags span,.blog-details-tags ul{
+	float:left;
+}
+.blog-details-tags span{
+    font-weight: 500;
+}
+.blog-details-tags ul li a{
+	margin-left:8px;
+	transition:all 0.3s;
+}
+.blog-details-tags ul li a:hover{
+	color: #ffce1d;
+}
+.blog-details-like{
+	float:right;
+}
+.blog-details-like ul li a{
+	margin-right:20px;
+}
+.blog-details-like ul li a i{
+	color: #ffce1d;
+	margin-right:10px;
+	font-size:18px;
+}
+.blog-comment-head {
+	margin-bottom:30px;
+	clear:both;
+}
+.blog-comment-head h2{
+	font-size: 25px;
+	text-transform: none;
+	font-weight: 500;
+}
+.blog-comment-content{
+	border-bottom: 1px solid #E2E2E2;
+	margin-left: -15px;
+	padding:28px 0px;
+    font-weight: 300;
+}
+.blog-comment-content.blog-comment-border{
+	border-bottom:0px;
+}
+.blog-comment-img{
+	width:90px;
+	float:left;
+}
+.blog-comment-img img{
+	width:100%;
+}
+.blog-comment-txt{
+	padding: 0px 0px 0px 20px;
+	overflow:hidden;
+}
+.blog-comment-txt .reply{
+	overflow:hidden;
+    font-weight: 500;
+	font-size:17px;
+}
+.blog-comment-txt .reply a{
+	color: #222222;
+}
+.blog-comment-txt .reply span{
+	color:#ffce1d;
+	transition: 0.3s;
+}
+.blog-comment-txt .reply a span:hover {
+	color: #222;
+}
+.blog-comment-txt .timedate span{
+	font-size: 14px;
+	display: block;
+	color: #666666;
+}
+.single-form-head h2{
+	margin:40px 0px 45px;
+}
+.single-form-head h2{
+	font-size: 25px;
+	text-transform: none;
+	font-weight: 500;
+}
+.single-form{
+	margin-bottom:20px;
+}
+.single-form textarea {
+    height: 200px;
+	width:100%;
+	padding:20px 20px;
+	background:#F7F7F7;
+	border:1px solid #E2E2E2;
+	transition:all 0.3s;
+}
+.single-form input {
+    height: 50px;
+	width:100%;
+	padding:0px 20px;
+	background:#F7F7F7;
+	border:1px solid #E2E2E2;
+	transition:all 0.3s;
+}
+.single-form input:hover,.single-form textarea:hover{
+	border:1px solid #ffce1d;
+}
+.single-form button{
+	width: 70%;
+	height: 50px;
+	font-size: 14px;
+	background: #F9BF3A;
+	border: none;
+	color: #fff;
+	text-transform: uppercase;
+    font-weight: 500;
+	margin-top:15px;
+	transition:all 0.3s;
+}
+.single-form button:hover{
+	background: #222;
+}
+/* blog sidebar section start */
+.blog-side-search{
+	border:1px solid #E2E2E2;
+	padding:15px 20px 15px 25px;
+	transition: 0.3s;
+}
+.blog-side-search input{
+	border:none;
+	width:88%;
+	border-right:2px solid #E2E2E2;
+	margin: 0;
+	padding: 0;
+}
+.blog-side-search:hover i{
+	color: #222;
+}
+.blog-side-search i{
+	float:right;
+	color:#ffce1d;
+	font-size: 18px;
+	padding-top:2px;
+}
+.sidebar-category h2{
+	margin:65px 0px 30px;
+	font-size: 25px;
+	text-transform: none;
+	font-weight: 500;
+}
+.sidebar-category ul {
+	margin: 0;
+	padding: 0;
+}
+.sidebar-category ul li {
+	list-style: none;
+}
+.sidebar-category ul li a{
+    font-weight: 300;
+	padding: 15px 25px;
+	border: 1px solid #D1D1D1;
+	display: block;
+	margin-bottom: 20px;
+	color: #222;
+}
+.sidebar-category ul li a i{
+	margin-right:10px;
+}
+.sidebar-recent-post{
+    font-weight: 300;
+	overflow: hidden;
+}
+.sidebar-recent-post h2{
+	margin:45px 0px 38px;
+	font-size: 25px;
+	text-transform: none;
+	font-weight: 500;
+}
+.sidebar-recent-post p{
+	font-size:15px;
+}
+.sidebar-recent-post a span {
+	margin:5px 0px 25px;
+	display: block;
+}
+.sidebar-recent-post a{
+	color:#666666;
+	font-size:15px;
+	display:block;
+	transition:all 0.3s;
+}
+.sidebar-recent-post a:hover{
+	color:#ffce1d;
+}
+.sidebar-archive-post{
+    font-weight: 300;
+	overflow: hidden;
+	text-transform: none;
+	font-weight: 500;
+}
+.sidebar-archive-post h2{
+	margin:35px 0px 38px;
+	font-size: 25px;
+	text-transform: none;
+	font-weight: 500;
+}
+.sidebar-archive-post p{
+	font-size:15px;
+}
+.sidebar-archive-post a span {
+	margin:5px 0px 25px;
+	display: block;
+}
+.sidebar-archive-post a{
+	color:#666666;
+	font-size:15px;
+	display:block;
+	transition:all 0.3s;
+}
+.sidebar-archive-post a:hover{
+	color:#ffce1d;
+}
+.single-blog.single-blog-page:hover{
+  box-shadow: none;
+}
+/* SINGLE BLOG PAGE CSS END */

@@ -1,0 +1,87 @@
+.mainmanu ul li:hover a, .mainmanu ul li.current a, .off-canvas-menu ul li:hover a, .off-canvas-menu ul li.current a {
+    color: #9b59b6;
+}
+.menu-trigger:hover {
+    color: #9b59b6;
+}
+.menu-close {
+	color: #9b59b6;
+}
+.slide-area h3 {
+    color: #9b59b6;
+}
+.boxed-btn {
+	background-color: #9b59b6;
+	border-color: #9b59b6;
+}
+.borderd-btn {
+	border-color: #9b59b6;
+}
+.borderd-btn:hover {
+	background-color: #9b59b6;
+}
+.portfolio-menu ul li:hover, .portfolio-menu ul li.active {
+    color: #9b59b6;
+    border-color: #9b59b6;
+}
+.service-icon {
+	color: #9b59b6;
+	border-color: #9b59b6;
+}
+.my-progress-bar .progress .progress-bar {
+	background-color: #9b59b6;
+}
+.my-progress-bar .progress .progress-bar::after {
+	background: #9b59b6;
+	color: #9b59b6;
+	box-shadow: 0 0 0 5px #c583e0;
+}
+.owl-nav div {
+	background: #9b59b6;
+}
+.author-rating i.fa {
+    color: #9b59b6;
+}
+input[type="submit"], button[type="submit"] {
+	background: #9b59b6;
+}
+.social-media a:hover {
+    background: #9b59b6;
+}
+.scroll-to-top {
+	background: #9b59b6;
+}
+/*blog*/
+.single-form button{
+	background: #9b59b6;
+}
+.blog-details-link ul li a:hover{
+	color: #9b59b6;
+}
+.blog-details-para p.activv{
+	color: #9b59b6;
+}
+.blog-details-tags ul li a:hover{
+	color: #9b59b6;
+}
+.blog-details-like ul li a i{
+	color: #9b59b6;
+}
+.blog-comment-txt .reply span{
+	color:#9b59b6;
+}
+.single-form input:hover,.single-form textarea:hover{
+	border:1px solid #9b59b6;
+}
+.blog-side-search i{
+	color:#9b59b6;
+}
+.sidebar-recent-post a:hover{
+	color:#9b59b6;
+}
+.sidebar-archive-post a:hover{
+	color:#9b59b6;
+}
+.portfolio-hover a:hover{
+  background:#9b59b6;
+}
